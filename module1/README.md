@@ -1,5 +1,6 @@
 ## Question 1. Understanding Docker images
 ```docker run -it --rm --entrypoint=bash python:3.13```
+
 réponse : pip 25.3 
 
 ## Question 2. Understanding Docker networking and docker-compose

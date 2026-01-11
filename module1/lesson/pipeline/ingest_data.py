@@ -67,4 +67,5 @@ def run(pg_user, pg_password, pg_host, pg_port, pg_db, year, month, chunksize, t
             if_exists='append')
 
 if __name__ == "__main__":
+    print("Ingesting data to Postgres")
     run()

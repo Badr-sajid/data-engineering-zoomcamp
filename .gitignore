@@ -1,6 +1,10 @@
 *.parquet
 *.venv
 *.ics
+*.json
+*.env_encoded
+
+projet_perso/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

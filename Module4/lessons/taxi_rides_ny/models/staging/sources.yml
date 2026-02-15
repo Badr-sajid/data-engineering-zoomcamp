@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "Raw data sources"
+    database: dtc-de-course-483922
+    schema: zoomcamp
+    tables:
+      - name: yellow_datatrip_partitioned_clustered
+      - name: green_datatrip_partitioned_clustered
+      - name: fhv_datatrip_partitioned

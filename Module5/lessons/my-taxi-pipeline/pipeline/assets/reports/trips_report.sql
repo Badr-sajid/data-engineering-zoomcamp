@@ -29,12 +29,6 @@ columns:
 
 @bruin */
 
--- Purpose of reports:
--- - Aggregate staging data for dashboards and analytics
--- Required Bruin concepts:
--- - Filter using `{{ start_datetime }}` / `{{ end_datetime }}` for incremental runs
--- - GROUP BY your dimension + date columns
-
 SELECT
     CAST(tpep_pickup_datetime AS DATE) AS trip_date,
     taxi_type,
@@ -46,4 +40,3 @@ FROM staging.trips
 WHERE tpep_pickup_datetime >= '{{ start_datetime }}'
   AND tpep_pickup_datetime < '{{ end_datetime }}'
 GROUP BY 1, 2, 3
-
